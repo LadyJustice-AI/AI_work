@@ -28,6 +28,11 @@ def open_csv(csv_file):
 	return lst_of_CELEXID
 
 def retrieve_OJ_content(OJ):
+	""" 
+	Argument :
+
+	OJ : must be str, It's the OJ identifier
+	"""
 
 	url = "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L:2022:152:FULL"+OJ
 	#alternatives_url = "http://publications.europa.eu/resource/celex/"+CELEX_ID
@@ -45,10 +50,12 @@ def retrieve_OJ_content(OJ):
 	# Enlever les espaces superflus
 	cleaned_text = ' '.join(text.split())
 
-	# Afficher ou traiter le texte nettoyé
+
+	# print  the cleaned text
 	#print(cleaned_text)
-	# Afficher ou traiter le texte
+	# Print the text without processing it
 	#print(text)
+
 
 	return soup
 
