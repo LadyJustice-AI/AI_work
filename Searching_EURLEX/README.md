@@ -12,13 +12,13 @@ When the searching is finish, you can export the legal act that has been found a
 For the "Search results 20240722.tsv" , the parameters are :
 _Title, Subtitle, CELEX number, Adopted acts,	Latest consolidated version,	ECLI identifier,	Transposed legal act(s),	Date of document_
 
-![alt text](image.png)
+![alt text](images/image.png)
 
 Title and Subtitle couldn't be remove to the export.
 
 After that you have a file in TSV format. In my experiment, I loaded it with excel and obtain the CSV file with the same name, find a screen with the tool, i used.
 
 
-![alt text](first_step_in_excel.png)
+![alt text](images/first_step_in_excel.png)
 
 
