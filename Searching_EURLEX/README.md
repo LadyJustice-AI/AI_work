@@ -16,6 +16,9 @@ _Title, Subtitle, CELEX number, Adopted acts,	Latest consolidated version,	ECLI 
 
 Title and Subtitle couldn't be remove to the export.
 
-After that you have a file in TSV format and you need 
+After that you have a file in TSV format. In my experiment, I loaded it with excel and obtain the CSV file with the same name, find a screen with the tool, i used.
+
+
+![alt text](first_step_in_excel.png)
 
 
