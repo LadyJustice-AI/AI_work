@@ -18,6 +18,5 @@ Title and Subtitle couldn't be remove to the export.
 
 After that you have a file in TSV format. In my experiment, I loaded it with excel and obtain the CSV file with the same name, find a screen with the tool, i used.
 
-
-![Description de l'image](images/first_step_in_excel.png){:width="200px"}
+<img src="images/first_step_in_excel.png" alt="Première étape dans Excel" width="500"/>
 
