@@ -31,3 +31,7 @@ You will have a preview of the data transfer, If the column displays well, you c
 And it's done.
 
 You can do the same steps to have much data with many different topics.
+
+### Other way
+
+The EURLEX website have others options to collect data. We can use SparQL request but this work didn't use this for now.

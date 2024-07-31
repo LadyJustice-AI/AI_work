@@ -134,27 +134,121 @@ def main():
 				texts_associated.append(text)"""
 
 
+	
 	# Extract all the paragraph
-	paragraphs = soup.find_all('p', class_= "oj-note")
+	paragraphs = soup.find_all('p', class_="oj-note")
 
+	# Debug: Assurez-vous que les paragraphes sont bien extraits
+	print(f"Nombre de paragraphes extraits : {len(paragraphs)}")
+	for i, p in enumerate(paragraphs, 1):
+			print(f"Paragraphe {i}: {p}")
 
-	directive_pattern = re.compile(r'(Directive \d{4}/\d{2,4}/(?:EU|EC|EEC|Euratom)|Regulation \((?:EU|EC|EEC|Euratom)\) \d{4}/\d{2,4})')
 	# Filtrer et extraire les textes des paragraphes contenant des mentions de directives
+	directive_pattern = re.compile(r'Directive \((?:EU|EC|EEC|Euratom)\) \d{4}/\d{2,4}|Regulation \((?:EU|EC|EEC|Euratom)\) No \d{2,4}/\d{2,4}')
+	#directive_pattern = re.compile(r'(Directive /(?:EU|EC|EEC|Euratom)\d{4}/\d{2,4}/(?:EU|EC|EEC|Euratom)|Regulation \((?:EU|EC|EEC|Euratom)\) \d{4}/\d{2,4})')
+		
 	references = []
+	test = "(7)Including the assessment referred to in Article 15 (7) of Directive (EU) 2019/2001."    
+	count = 0 
 	for p in paragraphs:
 		text = p.get_text(strip=True)
-		#print(text)
-		if directive_pattern.search(text):
-			references.append(text)
 
-	# print the associated text
+		# Debug: Afficher le texte brut du paragraphe
+		print(f"Texte du paragraphe: {text}")
+		print(type(text))
+		if "Directive" in text: 
+			count+=1
+		if directive_pattern.search(text):
+
+			print(directive_pattern.search(text))
+			match = directive_pattern.search(text)
+			if match:
+				directive_text = match.group(0)
+				print(f"{directive_text} TEXT CROP")
+				references.append(directive_text)
+			
+	print(count)
+	print("Références trouvées:")
 	for ref in references:
 		print(f"Texte associé: {ref}\n")
 	
-	print()
+	"""# Imprimer chaque paragraphe pour vérifier le contenu
+	print(f"Nombre de paragraphes extraits : {len(paragraphs)}")
+	for i, p in enumerate(paragraphs, 1):
+			text = p.get_text(strip=True)
+			print(f"Paragraphe {i}: {text}")
+			print("transition")
+			
+			# Tester l'expression régulière directement
+			match = directive_pattern.search(text)
+			if match:
+					directive_text = match.group(1)
+					print(f"Correspondance trouvée : {directive_text}")
+					references.append(directive_text)
+			else:
+					print("Aucune correspondance trouvée")
+
+	# Vérifiez le contenu de la liste des références
+	print("Références trouvées:")
+	for ref in references:
+			print(f"Texte associé: {ref}\n")"""
 	"""
 	for text in texts_associated:
 		print(f"Texte associé: {text}\n")"""
 	#MAIN PART 
+
+def test():
+# Retrieve all the CELEXID of the CSV
+	CELEXID = open_csv("Searching_housing_2023_EU.csv")
+
+	print(CELEXID)
+	#Store the content associated to the CELEXID that we want
+	soup = retrieve_CELEX_content(CELEXID[1])
+
+	# Search all the 'a' tag in the HTML
+	references = soup.find_all('a')
+	print(references)
+
+	# Extract the useful informations
+	texts_associated = []
+	for ref in references:
+		text = ref.get_text()
+		#from the 'a' tag, collect the link in the href attribute
+		link = ref['href']
+		#Create a list with a tuple that contains the text between the tag and the link
+		texts_associated.append((text, link))
+
+	# Print the text and the link
+	for text, link in texts_associated:
+
+		#print(f"Associated Text: {text}\nLink: https://eur-lex.europa.eu{link}\n")
+		print("keep")
+
+	# Debug: Assurez-vous que les paragraphes sont bien extraits
+	print(f"Nombre de paragraphes extraits : {len(paragraphs)}")
+	for i, p in enumerate(paragraphs, 1):
+			print(f"Paragraphe {i}: {p}")
+
+	# Filtrer et extraire les textes des paragraphes contenant des mentions de directives
+	directive_pattern = re.compile(r'Directive \((?:EU|EC|EEC|Euratom)\) \d{4}/\d{2,4}|Regulation \((?:EU|EC|EEC|Euratom)\) No \d{2,4}/\d{2,4}')
+	#directive_pattern = re.compile(r'(Directive /(?:EU|EC|EEC|Euratom)\d{4}/\d{2,4}/(?:EU|EC|EEC|Euratom)|Regulation \((?:EU|EC|EEC|Euratom)\) \d{4}/\d{2,4})')
+		
+	references = []
+	test2 = "(7)Including the assessment referred to in Article 15 (7) of Directive (EU) 2019/2001."      
+	test = "(49)Regulation (EU) No 575/2013 of the European Parliament and of the Council of 26 June 2013 on prudential requirements for credit institutions and amending Regulation (EU) No 648/2012 (OJ L 176, 27.6.2013, p. 1)."             
+	 
+	# Debug: Vérifiez le contenu de la liste des références
+	if directive_pattern.search(test):
+		references.append(test)
+		print(directive_pattern.search(test))
+		match = directive_pattern.search(test)
+		if match:
+			directive_text = match.group(0)
+			print(f"{directive_text} TEXT CROP")
+			references.append(directive_text)
+	print("Références trouvées:")
+	for ref in references:
+			print(f"Texte associé: {ref}\n")
+
 
 main()

@@ -1,0 +1,1046 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vah:VahvistettavaLaki xmlns:vah="http://www.vn.fi/skeemat/vahvistettavalaki/2010/04/27" xmlns:sdk="http://www.finlex.fi/skeemat/edita/sdk/2010/04/27" xmlns:saa="http://www.vn.fi/skeemat/saadoskooste/2010/04/27" xmlns:saa1="http://www.vn.fi/skeemat/saadoselementit/2010/04/27" xmlns:met="http://www.vn.fi/skeemat/metatietokooste/2010/04/27" xmlns:met1="http://www.vn.fi/skeemat/metatietoelementit/2010/04/27" xmlns:asi="http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27" xmlns:asi1="http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27" xmlns:org="http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15" xmlns:org1="http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15" xmlns:tau="http://www.vn.fi/skeemat/taulukkokooste/2010/04/27" xmlns:sis="http://www.vn.fi/skeemat/sisaltokooste/2010/04/27" xmlns:sis1="http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27" met1:kieliKoodi="fi" met1:julkisuusKoodi="julkinen" met1:tilaKoodi="Valmis" met1:identifiointiTunnus="0000000000000000" met1:versioTeksti="1.0" met1:asiakirjatyyppiNimi="Vahvistettava laki" met1:laadintaPvm="2100-01-01" met1:rakennemaarittelyNimi="vahvistettavalaki.xsd">
+  <asi:IdentifiointiOsa>
+    <met1:AsiakirjatyyppiNimi>Vahvistettava laki</met1:AsiakirjatyyppiNimi>
+    <asi:EduskuntaTunniste>
+      <met1:AsiakirjatyyppiKoodi>SDK</met1:AsiakirjatyyppiKoodi>
+      <asi1:AsiakirjaNroTeksti>1089</asi1:AsiakirjaNroTeksti>
+      <asi1:ValtiopaivavuosiTeksti>2011</asi1:ValtiopaivavuosiTeksti>
+    </asi:EduskuntaTunniste>
+    <met:Nimeke>
+      <met1:NimekeTeksti>oikeusapupiireistä sekä oikeusaputoimistojen toimipaikoista ja edunvalvonta-alueista</met1:NimekeTeksti>
+    </met:Nimeke>
+  </asi:IdentifiointiOsa>
+  <saa:SaadosOsa>
+    <saa:Saados met1:kieliKoodi="fi" saa1:saadostyyppiNimi="Asetus">
+      <saa:SaadosNimeke>
+        <saa:SaadostyyppiKooste>Oikeusministeriön asetus</saa:SaadostyyppiKooste>
+        <saa:SaadosNimekeKooste>oikeusapupiireistä sekä oikeusaputoimistojen toimipaikoista ja edunvalvonta-alueista</saa:SaadosNimekeKooste>
+      </saa:SaadosNimeke>
+      <saa:Johtolause>
+        <saa:SaadosKappaleKooste>Oikeusministeriön päätöksen mukaisesti säädetään valtion oikeusaputoimistoista annetun lain (258/2002) 2 §:n ja holhoustoimen edunvalvontapalveluiden järjestämisestä annetun lain (575/2008) 1 §:n 2 ja 3 momentin sekä 7 §:n 2 momentin nojalla, sellaisena kuin niistä on ensin mainittu laissa 929/2008:</saa:SaadosKappaleKooste>
+      </saa:Johtolause>
+      <saa:Pykalisto>
+        <saa:Pykala saa1:pykalaLuokitusKoodi="Pykala" saa1:identifiointiTunnus="1 §">
+          <saa:PykalaTunnusKooste>1 §</saa:PykalaTunnusKooste>
+          <saa:SaadosOtsikkoKooste>Oikeusapupiirit</saa:SaadosOtsikkoKooste>
+          <saa:MomenttiKooste>Oikeusapupiirit ovat Turun, Vaasan, Itä-Suomen, Helsingin, Kouvolan ja Rovaniemen oikeusapupiiri.</saa:MomenttiKooste>
+        </saa:Pykala>
+        <saa:Pykala saa1:pykalaLuokitusKoodi="Pykala" saa1:identifiointiTunnus="2 §">
+          <saa:PykalaTunnusKooste>2 §</saa:PykalaTunnusKooste>
+          <saa:SaadosOtsikkoKooste>Oikeusaputoimistojen toimipaikat</saa:SaadosOtsikkoKooste>
+          <saa:KohdatMomentti>
+            <saa:MomenttiJohdantoKooste>Oikeusaputoimistot ottavat oikeusavun ja edunvalvonnan asiakkaita vastaan toimipaikoissa, jotka sijaitsevat oikeusapupiireittäin seuraavasti:</saa:MomenttiJohdantoKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:SaadosKursiiviKooste>Turun oikeusapupiiri</saa:SaadosKursiiviKooste>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Ahvenanmaan oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Maarianhamina</ko>
+              </saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kanta-Hämeen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Forssa</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Hämeenlinna</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kankaanpään oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Ikaalinen</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kankaanpää</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Parkano</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Pirkanmaan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Akaa</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kangasala</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Lempäälä</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Mänttä-Vilppula</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Nokia</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Orivesi</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Ruovesi</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Sastamala</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Tampere</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Valkeakoski</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Rauman oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Eura</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Laitila</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Rauma</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Uusikaupunki</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Tampereen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Tampere</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Turun oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Turku</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Varsinais-Suomen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Loimaa</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Mynämäki</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Salo</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Somero</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Turku</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:SaadosKursiiviKooste>Vaasan oikeusapupiiri</saa:SaadosKursiiviKooste>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Jyväskylän oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Joutsa</ko>
+                <ko>Jyväskylä</ko>
+                <ko>Jämsä</ko>
+                <ko>Keuruu</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Jämsän oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Jämsä</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Kokkolan oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Kannus</ko>
+                <ko>Kaustinen</ko>
+                <ko>Kokkola</ko>
+                <ko>Pietarsaari</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Lapuan oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Alajärvi</ko>
+                <ko>Alavus</ko>
+                <ko>Kauhava</ko>
+                <ko>Lappajärvi</ko>
+                <ko>Lapua</ko>
+                <ko>Virrat</ko>
+                <ko>Ähtäri</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Porin oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Harjavalta</ko>
+                <ko>Huittinen</ko>
+                <ko>Kokemäki</ko>
+                <ko>Merikarvia</ko>
+                <ko>Pori</ko>
+                <ko>Säkylä</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Seinäjoen oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Jalasjärvi</ko>
+                <ko>Kauhajoki</ko>
+                <ko>Kurikka</ko>
+                <ko>Seinäjoki</ko>
+                <ko>Teuva</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Vaasan oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Isokyrö</ko>
+                <ko>Laihia</ko>
+                <ko>Maalahti</ko>
+                <ko>Närpiö</ko>
+                <ko>Vaasa</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Äänekosken oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Konnevesi</ko>
+                <ko>Pihtipudas</ko>
+                <ko>Saarijärvi</ko>
+                <ko>Viitasaari</ko>
+                <ko>Äänekoski</ko>
+              </saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:SaadosKursiiviKooste>Itä-Suomen oikeusapupiiri</saa:SaadosKursiiviKooste>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Iisalmen oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Iisalmi</ko>
+                <ko>Kiuruvesi</ko>
+                <ko>Pielavesi</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Kainuun oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Hyrynsalmi</ko>
+                <ko>Kajaani</ko>
+                <ko>Kuhmo</ko>
+                <ko>Paltamo</ko>
+                <ko>Puolanka</ko>
+                <ko>Sotkamo</ko>
+                <ko>Suomussalmi</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Keski-Savon oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Hankasalmi</ko>
+                <ko>Heinävesi</ko>
+                <ko>Kangasniemi</ko>
+                <ko>Leppävirta</ko>
+                <ko>Pieksämäki</ko>
+                <ko>Varkaus</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Kuopion oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Juankoski</ko>
+                <ko>Kaavi</ko>
+                <ko>Kuopio</ko>
+                <ko>Nilsiä</ko>
+                <ko>Rautalampi</ko>
+                <ko>Rautavaara</ko>
+                <ko>Siilinjärvi</ko>
+                <ko>Suonenjoki</ko>
+                <ko>Tervo</ko>
+                <ko>Tuusniemi</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Mikkelin oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Juva</ko>
+                <ko>Kangasniemi</ko>
+                <ko>Mikkeli</ko>
+                <ko>Mäntyharju</ko>
+                <ko>Puumala</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Pohjois-Karjalan oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Ilomantsi</ko>
+                <ko>Joensuu (Eno)</ko>
+                <ko>Joensuu (keskusta)</ko>
+                <ko>Joensuu (Tuupovaara)</ko>
+                <ko>Juuka</ko>
+                <ko>Kesälahti</ko>
+                <ko>Kitee</ko>
+                <ko>Lieksa</ko>
+                <ko>Nurmes</ko>
+                <ko>Outokumpu</ko>
+                <ko>Polvijärvi</ko>
+                <ko>Rääkkylä</ko>
+                <ko>Tohmajärvi</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Savonlinnan oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Rantasalmi</ko>
+                <ko>Savonlinna</ko>
+                <ko>Sulkava</ko>
+              </saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:SaadosKursiiviKooste>Helsingin oikeusapupiiri</saa:SaadosKursiiviKooste>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Helsingin oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Helsinki</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Järvenpään oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Järvenpää</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Itä-Uudenmaan oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Loviisa</ko>
+                <ko>Porvoo</ko>
+                <ko>Vantaa</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Länsi-Uudenmaan oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Espoo</ko>
+                <ko>Hanko</ko>
+                <ko>Inkoo</ko>
+                <ko>Kirkkonummi</ko>
+                <ko>Lohja</ko>
+                <ko>Raasepori (Karjaa)</ko>
+                <ko>Raasepori (Tammisaari)</ko>
+                <ko>Vihti</ko>
+              </saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:SaadosKursiiviKooste>Kouvolan oikeusapupiiri</saa:SaadosKursiiviKooste>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Hyvinkään oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Hyvinkää</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Kotkan oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Hamina</ko>
+                <ko>Kotka</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Kouvolan oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Kouvola</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Lahden oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Heinola</ko>
+                <ko>Lahti</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Lappeenrannan oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Imatra</ko>
+                <ko>Lappeenranta</ko>
+              </saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:SaadosKursiiviKooste>Rovaniemen oikeusapupiiri</saa:SaadosKursiiviKooste>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Haapajärven oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Haapajärvi</ko>
+                <ko>Haapavesi</ko>
+                <ko>Nivala</ko>
+                <ko>Pyhäjärvi</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Kemi-Tornion oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Kemi</ko>
+                <ko>Tervola</ko>
+                <ko>Tornio</ko>
+                <ko>Ylitornio</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Kittilän oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Enontekiö</ko>
+                <ko>Kittilä</ko>
+                <ko>Kolari</ko>
+                <ko>Muonio</ko>
+                <ko>Pello</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Oulun oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Haukipudas</ko>
+                <ko>Oulu</ko>
+                <ko>Raahe</ko>
+                <ko>Siikalatva</ko>
+                <ko>Utajärvi</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Oulunseudun oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Ii</ko>
+                <ko>Muhos</ko>
+                <ko>Oulu</ko>
+                <ko>Pudasjärvi</ko>
+                <ko>Raahe</ko>
+                <ko>Utajärvi</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Rovaniemen oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Hyrynsalmi</ko>
+                <ko>Kemijärvi</ko>
+                <ko>Kuusamo</ko>
+                <ko>Rovaniemi</ko>
+                <ko>Suomussalmi</ko>
+                <ko>Taivalkoski</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Sodankylän oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Enontekiö</ko>
+                <ko>Inari</ko>
+                <ko>Kittilä</ko>
+                <ko>Kolari</ko>
+                <ko>Muonio</ko>
+                <ko>Sodankylä</ko>
+                <ko>Utsjoki</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Ylivieskan oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Alavieska</ko>
+                <ko>Kalajoki</ko>
+                <ko>Oulainen</ko>
+                <ko>Ylivieska</ko>
+              </saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+          </saa:KohdatMomentti>
+          <saa:MomenttiKooste>Asiakkaita voidaan ottaa vastaan myös muualla kuin tässä asetuksessa mainituissa toimipaikoissa.</saa:MomenttiKooste>
+        </saa:Pykala>
+        <saa:Pykala saa1:pykalaLuokitusKoodi="Pykala" saa1:identifiointiTunnus="3 §">
+          <saa:PykalaTunnusKooste>3 §</saa:PykalaTunnusKooste>
+          <saa:SaadosOtsikkoKooste>Toimipaikoissa annettavat palvelut</saa:SaadosOtsikkoKooste>
+          <saa:MomenttiKooste>Oikeusaputoimisto määrää työjärjestyksessään, miten usein ja millä tavoin toimipaikassa otetaan vastaan asiakkaita. Harkinnassa on otettava huomioon alueen asiakas- ja asukasmäärä, aikaisempien vuosien kysyntä sekä vastaanotosta aiheutuvat kustannukset</saa:MomenttiKooste>
+        </saa:Pykala>
+        <saa:Pykala saa1:pykalaLuokitusKoodi="Pykala" saa1:identifiointiTunnus="4 §">
+          <saa:PykalaTunnusKooste>4 §</saa:PykalaTunnusKooste>
+          <saa:SaadosOtsikkoKooste>Edunvalvonta-alueet</saa:SaadosOtsikkoKooste>
+          <saa:MomenttiKooste>Holhoustoimen edunvalvontapalveluiden järjestämisestä annetun lain (575/2008) 1 §:n 2 momentissa tarkoitettuihin edunvalvonta-alueisiin kuuluu yksi tai useampi kunta siten kuin 2 momentissa säädetään.</saa:MomenttiKooste>
+          <saa:MomenttiKooste>Kunnat jakautuvat oikeusaputoimistoittain edunvalvonta-alueisiin seuraavasti:</saa:MomenttiKooste>
+          <saa:KohdatMomentti>
+            <saa:MomenttiJohdantoKooste>
+              <saa:SaadosKursiiviKooste>Turun oikeusapupiiri</saa:SaadosKursiiviKooste>
+            </saa:MomenttiJohdantoKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Ahvenanmaan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Brändö</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Eckerö</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Finström</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Föglö</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Geta</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Hammarland</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Jomala</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kumlinge</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kökar</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Lemland</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Lumparland</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Mariehamn</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Saltvik</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Sottunga</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Sund</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Vårdö</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kankaanpään oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Honkajoki</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Hämeenkyrö</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Ikaalinen</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Jämijärvi</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kankaanpää</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Karvia</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kihniö</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Lavia</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Parkano</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Siikainen</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kanta-Hämeen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Forssa</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Hattula</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Humppila</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Hämeenlinna</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Janakkala</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Jokioinen</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Tammela</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Ypäjä</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Pirkanmaan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Akaa</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Juupajoki</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kangasala</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Lempäälä</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Mänttä-Vilppula</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Nokia</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Orivesi</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Pirkkala</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Punkalaidun</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Pälkäne</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Ruovesi</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Sastamala</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Urjala</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Valkeakoski</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Vesilahti</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Virrat</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Ylöjärvi</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Rauman oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Eura</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Eurajoki</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kustavi</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Köyliö</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Laitila</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Pyhäranta</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Rauma</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Säkylä</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Taivassalo</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Uusikaupunki</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Vehmaa</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Tampereen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Tampere</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Turun oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kemiönsaari</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Länsi-Turunmaa</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Turku</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Varsinais-Suomen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Aura</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kaarina</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Koski TL</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Lieto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Loimaa</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Marttila</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Masku</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Mynämäki</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Naantali</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Nousiainen</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Paimio</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Oripää</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Pöytyä</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Raisio</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Rusko</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Salo</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Sauvo</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Somero</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Tarvasjoki</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:SaadosKursiiviKooste>Vaasan oikeusapupiiri</saa:SaadosKursiiviKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Jyväskylän oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Hankasalmi</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Joutsa</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Jyväskylä</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Jämsä</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Keuruu</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kuhmoinen</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Laukaa</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Luhanka</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Multia</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Muurame</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Petäjävesi</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Toivakka</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Uurainen</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kokkolan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Halsua</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kannus</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kaustinen</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kokkola</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kruunupyy</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Luoto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Lestijärvi</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Pedersören kunta</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Perho</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Pietarsaari</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Toholampi</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Uusikaarlepyy</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Veteli</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Lapuan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Alajärvi</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Alavus</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Evijärvi</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kauhava</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kuortane</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Lappajärvi</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Lapua</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Soini</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Töysä</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Vimpeli</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Ähtäri</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Porin oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Harjavalta</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Huittinen</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kiikoinen</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kokemäki</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Luvia</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Merikarvia</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Nakkila</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Pomarkku</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Pori</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Ulvila</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Seinäjoen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Ilmajoki</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Isojoki</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Jalasjärvi</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Karijoki</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kauhajoki</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kurikka</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Seinäjoki</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Teuva</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Vaasan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Isokyrö</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kaskinen</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Korsnäs</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kristiinankaupunki</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Laihia</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Maalahti</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Mustasaari</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Närpiö</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Vaasa</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Vähäkyrö</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Vöyri</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Äänekosken oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kannonkoski</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Karstula</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kinnula</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kivijärvi</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Konnevesi</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kyyjärvi</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Pihtipudas</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Saarijärvi</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Viitasaari</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Äänekoski</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:SaadosKursiiviKooste>Itä-Suomen oikeusapupiiri</saa:SaadosKursiiviKooste>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Iisalmen oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Iisalmi</ko>
+                <ko>Keitele</ko>
+                <ko>Kiuruvesi</ko>
+                <ko>Lapinlahti</ko>
+                <ko>Pielavesi</ko>
+                <ko>Sonkajärvi</ko>
+                <ko>Vieremä</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Kainuun oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Hyrynsalmi</ko>
+                <ko>Kajaani</ko>
+                <ko>Kuhmo</ko>
+                <ko>Paltamo</ko>
+                <ko>Puolanka</ko>
+                <ko>Ristijärvi</ko>
+                <ko>Sotkamo</ko>
+                <ko>Suomussalmi</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Keski-Savon oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Heinävesi</ko>
+                <ko>Joroinen</ko>
+                <ko>Leppävirta</ko>
+                <ko>Pieksämäki</ko>
+                <ko>Varkaus</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Kuopion oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Juankoski</ko>
+                <ko>Kaavi</ko>
+                <ko>Kuopio</ko>
+                <ko>Maaninka</ko>
+                <ko>Nilsiä</ko>
+                <ko>Rautalampi</ko>
+                <ko>Rautavaara</ko>
+                <ko>Siilinjärvi</ko>
+                <ko>Suonenjoki</ko>
+                <ko>Tervo</ko>
+                <ko>Tuusniemi</ko>
+                <ko>Vesanto</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Mikkelin oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Hirvensalmi</ko>
+                <ko>Juva</ko>
+                <ko>Kangasniemi</ko>
+                <ko>Mikkeli</ko>
+                <ko>Mäntyharju</ko>
+                <ko>Pertunmaa</ko>
+                <ko>Puumala</ko>
+                <ko>Ristiina</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Pohjois-Karjalan oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Ilomantsi</ko>
+                <ko>Joensuu</ko>
+                <ko>Juuka</ko>
+                <ko>Kesälahti</ko>
+                <ko>Kitee</ko>
+                <ko>Kontiolahti</ko>
+                <ko>Lieksa</ko>
+                <ko>Liperi</ko>
+                <ko>Nurmes</ko>
+                <ko>Outokumpu</ko>
+                <ko>Polvijärvi</ko>
+                <ko>Rääkkylä</ko>
+                <ko>Tohmajärvi</ko>
+                <ko>Valtimo</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Savonlinnan oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Enonkoski</ko>
+                <ko>Kerimäki</ko>
+                <ko>Punkaharju</ko>
+                <ko>Rantasalmi</ko>
+                <ko>Savonlinna</ko>
+                <ko>Sulkava</ko>
+              </saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:SaadosKursiiviKooste>Helsingin oikeusapupiiri</saa:SaadosKursiiviKooste>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Helsingin oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Helsinki</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Järvenpään oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Järvenpää</ko>
+                <ko>Kerava</ko>
+                <ko>Mäntsälä</ko>
+                <ko>Pornainen</ko>
+                <ko>Tuusula</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Länsi-Uudenmaan oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Espoo</ko>
+                <ko>Hanko</ko>
+                <ko>Inkoo</ko>
+                <ko>Karjalohja</ko>
+                <ko>Karkkila</ko>
+                <ko>Kauniainen</ko>
+                <ko>Kirkkonummi</ko>
+                <ko>Lohja</ko>
+                <ko>Nummi-Pusula</ko>
+                <ko>Raasepori</ko>
+                <ko>Siuntio</ko>
+                <ko>Vihti</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Itä-Uudenmaan oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Askola</ko>
+                <ko>Lapinjärvi</ko>
+                <ko>Loviisa</ko>
+                <ko>Myrskylä</ko>
+                <ko>Porvoo</ko>
+                <ko>Pukkila</ko>
+                <ko>Sipoo</ko>
+                <ko>Vantaa</ko>
+              </saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:SaadosKursiiviKooste>Kouvolan oikeusapupiiri</saa:SaadosKursiiviKooste>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Hyvinkään oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Hausjärvi</ko>
+                <ko>Hyvinkää</ko>
+                <ko>Loppi</ko>
+                <ko>Nurmijärvi</ko>
+                <ko>Riihimäki</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Kotkan oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Hamina</ko>
+                <ko>Kotka</ko>
+                <ko>Miehikkälä</ko>
+                <ko>Pyhtää</ko>
+                <ko>Virolahti</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Kouvolan oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Iitti</ko>
+                <ko>Kouvola</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Lahden oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Asikkala</ko>
+                <ko>Hartola</ko>
+                <ko>Heinola</ko>
+                <ko>Hollola</ko>
+                <ko>Hämeenkoski</ko>
+                <ko>Kärkölä</ko>
+                <ko>Lahti</ko>
+                <ko>Nastola</ko>
+                <ko>Orimattila</ko>
+                <ko>Padasjoki</ko>
+                <ko>Sysmä</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Lappeenrannan oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Imatra</ko>
+                <ko>Lappeenranta</ko>
+                <ko>Lemi</ko>
+                <ko>Luumäki</ko>
+                <ko>Parikkala</ko>
+                <ko>Rautjärvi</ko>
+                <ko>Ruokolahti</ko>
+                <ko>Savitaipale</ko>
+                <ko>Suomenniemi</ko>
+                <ko>Taipalsaari</ko>
+              </saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:SaadosKursiiviKooste>Rovaniemen oikeusapupiiri</saa:SaadosKursiiviKooste>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Haapajärven oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Haapajärvi</ko>
+                <ko>Haapavesi</ko>
+                <ko>Kärsämäki</ko>
+                <ko>Nivala</ko>
+                <ko>Pyhäjärvi</ko>
+                <ko>Reisjärvi</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Kemi-Tornion oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Kemi</ko>
+                <ko>Keminmaa</ko>
+                <ko>Simo</ko>
+                <ko>Tervola</ko>
+                <ko>Tornio</ko>
+                <ko>Ylitornio</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Oulun oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Hailuoto</ko>
+                <ko>Haukipudas</ko>
+                <ko>Ii</ko>
+                <ko>Kempele</ko>
+                <ko>Kiiminki</ko>
+                <ko>Liminka</ko>
+                <ko>Lumijoki</ko>
+                <ko>Muhos</ko>
+                <ko>Oulu</ko>
+                <ko>Oulunsalo</ko>
+                <ko>Pudasjärvi</ko>
+                <ko>Pyhäjoki</ko>
+                <ko>Pyhäntä</ko>
+                <ko>Raahe</ko>
+                <ko>Siikajoki</ko>
+                <ko>Siikalatva</ko>
+                <ko>Taivalkoski</ko>
+                <ko>Tyrnävä</ko>
+                <ko>Utajärvi</ko>
+                <ko>Vaala</ko>
+                <ko>Vihanti</ko>
+                <ko>Yli-Ii</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Rovaniemen oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Kemijärvi</ko>
+                <ko>Kuusamo</ko>
+                <ko>Pelkosenniemi</ko>
+                <ko>Posio</ko>
+                <ko>Ranua</ko>
+                <ko>Rovaniemi</ko>
+                <ko>Salla</ko>
+                <ko>Savukoski</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Sodankylän oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Enontekiö</ko>
+                <ko>Inari</ko>
+                <ko>Kittilä</ko>
+                <ko>Kolari</ko>
+                <ko>Muonio</ko>
+                <ko>Pello</ko>
+                <ko>Sodankylä</ko>
+                <ko>Utsjoki</ko>
+              </saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>
+                <saa:MomenttiJohdantoKooste>Ylivieskan oikeusaputoimisto</saa:MomenttiJohdantoKooste>
+                <ko>Alavieska</ko>
+                <ko>Kalajoki</ko>
+                <ko>Merijärvi</ko>
+                <ko>Oulainen</ko>
+                <ko>Sievi</ko>
+                <ko>Ylivieska</ko>
+              </saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+          </saa:KohdatMomentti>
+        </saa:Pykala>
+        <saa:Pykala saa1:pykalaLuokitusKoodi="Pykala" saa1:identifiointiTunnus="5 §">
+          <saa:PykalaTunnusKooste>5 §</saa:PykalaTunnusKooste>
+          <saa:SaadosOtsikkoKooste>Esteellisyystilanteet</saa:SaadosOtsikkoKooste>
+          <saa:MomenttiKooste>Jos 4 §:n 2 momentissa tarkoitettu oikeusaputoimisto ei voi edunvalvonta-alueellaan osoittaa toimistostaan esteetöntä edunvalvojaa eikä sillä ole ostopalvelusopimusta tätä tarkoitusta varten holhoustoimen edunvalvontapalveluiden järjestämisestä annetun lain 2 §:n 3 momentissa tarkoitettua palveluntuottajan kanssa, edunvalvojan on velvollinen järjestämään toinen oikeusaputoimisto siten kuin 2 momentissa säädetään.</saa:MomenttiKooste>
+          <saa:MomenttiKooste>Esteellisyystilanteissa edunvalvonta tulee järjestää seuraavista oikeusaputoimistoista ensisijaisesti siinä oikeusaputoimistossa, jonne päämiehen asuinpaikasta on lyhin välimatka tai jossa edunvalvonta on muusta syystä tarkoituksenmukaisinta järjestää:</saa:MomenttiKooste>
+          <saa:KohdatMomentti>
+            <saa:MomenttiJohdantoKooste>
+              <saa:SaadosKursiiviKooste>Turun oikeusapupiiri</saa:SaadosKursiiviKooste>
+            </saa:MomenttiJohdantoKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Ahvenanmaan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Turun tai Varsinais-Suomen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kankaanpään oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Pirkanmaan, Porin tai Seinäjoen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kanta-Hämeen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Hyvinkään, Lahden, Pirkanmaan tai Varsinais-Suomen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Pirkanmaan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Jyväskylän, Kankaanpään, Kanta-Hämeen tai Tampereen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Rauman oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Porin tai Varsinais-Suomen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Tampereen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kankaanpään tai Pirkanmaan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Turun oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Länsi-Uudenmaan tai Varsinais-Suomen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Varsinais-Suomen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kanta-Hämeen, Länsi-Uudenmaan, Rauman tai Turun oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:SaadosKursiiviKooste>Vaasan oikeusapupiiri</saa:SaadosKursiiviKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Jyväskylän oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Keski-Savon, Lahden, Pirkanmaan tai Äänekosken oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kokkolan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Lapuan, Vaasan, Ylivieskan tai Äänekosken oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Lapuan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kokkolan, Pirkanmaan, Seinäjoen tai Äänekosken oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Porin oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kankaanpään, Rauman, Pirkanmaan tai Varsinais-Suomen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Seinäjoen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Lapuan, Kankaanpään tai Vaasan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Vaasan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kokkolan tai Seinäjoen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Äänekosken oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Iisalmen, Jyväskylän, Kokkolan tai Lapuan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:SaadosKursiiviKooste>Itä-Suomen oikeusapupiiri</saa:SaadosKursiiviKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Iisalmen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Haapajärven, Kainuun, Kuopion tai Äänekosken oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kainuun oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Iisalmen, Oulun, Pohjois-Karjalan tai Rovaniemen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kuopion oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Iisalmen, Pohjois-Karjalan tai Keski-Savon oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Mikkelin oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Lahden, Lappeenrannan tai Savonlinnan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Pohjois-Karjalan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kainuun, Kuopion tai Savonlinnan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Savonlinnan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Keski-Savon, Mikkelin, tai Pohjois-Karjalan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Keski-Savon oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kuopion, Mikkelin tai Savonlinnan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:SaadosKursiiviKooste>Helsingin oikeusapupiiri</saa:SaadosKursiiviKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Helsingin oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Itä-Uudenmaan ja Länsi-Uudenmaan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Järvenpään oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Hyvinkään tai Itä-Uudenmaan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Itä-Uudenmaan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Helsingin, Järvenpään, Kouvolan tai Länsi-Uudenmaan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Länsi-Uudenmaan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Helsingin, Itä-Uudenmaan ja Varsinais-Suomen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:SaadosKursiiviKooste>Kouvolan oikeusapupiiri</saa:SaadosKursiiviKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Hyvinkään oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Järvenpään, Kanta-Hämeen tai Länsi-Uudenmaan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kotkan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kouvolan tai Lappeenrannan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kouvolan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kotkan, Lahden tai Lappeenrannan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Lahden oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kanta-Hämeen, Kouvolan tai Jyväskylän oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Lappeenrannan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kotkan, Kouvolan, Mikkelin tai Savonlinnan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:SaadosKursiiviKooste>Rovaniemen oikeusapupiiri</saa:SaadosKursiiviKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Haapajärven oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Oulun, Ylivieskan tai Äänekosken oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kemi-Tornion oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Oulun, Rovaniemen tai Sodankylän oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Oulun oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Haapajärven, Kainuun, Kemi-Tornion, Rovaniemen tai Ylivieskan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Rovaniemen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kainuun, Kemi-Tornion, Oulun tai Sodankylän oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Sodankylän oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Kemi-Tornion tai Rovaniemen oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+            <saa:MomenttiKohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Ylivieskan oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+              <saa:MomenttiAlakohtaKooste>Haapajärven, Kokkolan tai Oulun oikeusaputoimisto</saa:MomenttiAlakohtaKooste>
+            </saa:MomenttiKohtaKooste>
+          </saa:KohdatMomentti>
+        </saa:Pykala>
+        <saa:Pykala saa1:pykalaLuokitusKoodi="VoimaantuloPykala" saa1:identifiointiTunnus="6 §">
+          <saa:PykalaTunnusKooste>6 §</saa:PykalaTunnusKooste>
+          <saa:SaadosOtsikkoKooste>Voimaantulo</saa:SaadosOtsikkoKooste>
+          <saa:MomenttiKooste>Tämä asetus tulee voimaan 1 päivänä tammikuuta 2012.</saa:MomenttiKooste>
+          <saa:MomenttiKooste>Tällä asetuksella kumotaan oikeusaputoimistojen edunvalvonta-alueista annettu oikeusministeriön asetus (637/2008) ja oikeusapupiireistä ja oikeusaputoimistojen toimipaikoista annettu oikeusministeriön asetus (819/2009).</saa:MomenttiKooste>
+          <saa:MomenttiKooste>Sen estämättä, mitä tässä asetuksessa säädetään, Turun oikeusapupiirissä on 31 päivään joulukuuta 2012 saakka Lohjan oikeusaputoimisto, jonka toimipaikat sijaitsevat Lohjalla, Raaseporissa (Karjaa ja Tammisaari), Hangossa, Inkoossa ja Vihdissä. Lohjan oikeusaputoimiston edunvalvonta-alueeseen kuuluvat Hanko, Inkoo, Karjalohja, Karkkila, Lohja, Nummi-Pusula, Raasepori ja Vihti. Lohjan oikeusaputoimiston tämän asetuksen 5 §:n 2 momentin tarkoittamat oikeusaputoimistot ovat Hyvinkään, Länsi-Uudenmaan ja Varsinais-Suomen oikeusaputoimistot. Hyvinkään, Länsi-Uudenmaan, Varsinais-Suomen ja Turun  oikeusaputoimiston 5 §:n 2 momentin tarkoittamana oikeusaputoimistona on lisäksi Lohjan oikeusaputoimisto.</saa:MomenttiKooste>
+          <saa:MomenttiKooste>Asetuksen täytäntöönpanon edellyttämiin toimiin voidaan ryhtyä ennen asetuksen voimaantuloa.</saa:MomenttiKooste>
+        </saa:Pykala>
+      </saa:Pykalisto>
+    </saa:Saados>
+  </saa:SaadosOsa>
+  <asi:AllekirjoitusOsa>
+    <asi:PaivaysKooste>  Helsingissä 18 päivänä lokakuuta 2011</asi:PaivaysKooste>
+    <asi:Allekirjoittaja>
+      <org:Henkilo>
+        <org1:AsemaTeksti>Oikeusministeri</org1:AsemaTeksti>
+        <org1:SukuNimi>Anna-Maja Henriksson</org1:SukuNimi>
+      </org:Henkilo>
+    </asi:Allekirjoittaja>
+    <asi:Allekirjoittaja>
+      <org:Henkilo>
+        <org1:AsemaTeksti>Hallitusneuvos</org1:AsemaTeksti>
+        <org1:SukuNimi>Maaria Rubanin</org1:SukuNimi>
+      </org:Henkilo>
+    </asi:Allekirjoittaja>
+  </asi:AllekirjoitusOsa>
+</vah:VahvistettavaLaki>
