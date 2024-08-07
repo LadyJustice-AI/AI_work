@@ -167,41 +167,43 @@ def show_xml_info(xml_file, output_csv):
 		
 		
 
-
-
 def main():
 
-	#---------------Part for the creation of a CSV of one particular year data---------------------------
-	
-	"""year_id= 'Finlex_processing/2015'
-	count = 0 
-	#in case, we want to debug
-	create_csv(year_id+"_output.csv")
-	for file in os.listdir(year_id):
-		#if count < 5: #debug line to just stop at the fifth XML files
-		file_path = os.path.join(year_id,file)
-		print(file_path)
-		show_xml_info(file_path, year_id+"_output.csv")
-			#count+=1 
-		
-	"""
-	#----------------Part for the creation of a data csv that contain all the data between 1917 and 2023------------------
-	
-	"""create_csv("output.csv")
-	for number in range(1918,2024):
-		print(number)
-		number_str = str(number)
-		for file in os.listdir(number_str):
-			file_path = os.path.join(number_str,file)
-			print(file_path)
-			show_xml_info(file_path, "output.csv")
-	
-	"""
-	#Creation of a specific CSV for the article 52 of 2015
-	show_xml_info("Finlex_processing/2015/asd20150052.xml", "Finlex_processing/2015_52_output.csv")
+  #---------------Part for the creation of a CSV of one particular year data---------------------------
+  """ 
+  For generating a CSV just with the data for one year, change the year in the year id vairable
+  """
+  """year_id= 'Finlex_processing/2015'
+  count = 0 
+  #in case, we want to debug
+  create_csv(year_id+"_output.csv")
+  for file in os.listdir(year_id):
+    #if count < 5: #debug line to just stop at the fifth XML files
+    file_path = os.path.join(year_id,file)
+    print(file_path)
+    show_xml_info(file_path, year_id+"_output.csv")
+      #count+=1 
+    
+  """
+  #----------------------------------PART FOR ALL THE DATA ( 1918 to 2023)---------------------------
+  
+  create_csv("output.csv")
+  #Under 1918, some problems can appear in the generating CSV
+  for number in range(1918,2024): 
+    print(number)
+    number_str = str(number)
+    for file in os.listdir(number_str):
+      file_path = os.path.join(number_str,file)
+      print(file_path)
+      show_xml_info(file_path, "output.csv")
+  
+  
+  #--------Creation of a specific CSV for the article 52 of 2015---------------
+  #show_xml_info("Finlex_processing/2015/asd20150052.xml", "Finlex_processing/2015_52_output.csv")
 
-	
+  
 #MAIN PROGRAM
+
 
 main()
 
