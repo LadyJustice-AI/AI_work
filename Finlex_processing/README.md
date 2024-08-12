@@ -19,7 +19,7 @@ You can find two python files.
 
 With Processing.py, you can have the data in a CSV file for any years or just have all the data from the year 1917.
 
-Important note : The file, in the path file 1994\asd19940635.xml , was removed because in the original data, it was empty so to avoid errors, it was better to remove it.
+Important note : The file, in the path file 1994\asd19940635.xml , was removed because in the original data, it was empty so, to avoid errors, it was better to remove it.
 
 ## Generate CSV
 

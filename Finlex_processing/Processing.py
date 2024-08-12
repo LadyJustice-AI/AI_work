@@ -15,13 +15,11 @@ def create_csv(output_csv):
 
 
 def remove_newlines(text_list):
-  return [[s.replace('\n', '') if s else s for s in sublist] for sublist in text_list]
+	""" This function replace the "\n" in a space in all sublists of a list (here it's used for the list of signatories)
+	return 
+	"""
+	return [[s.replace('\n', '') if s else s for s in sublist] for sublist in text_list]
 
-# Fonction pour diviser le texte autour de la virgule centrale
-# Fonction pour diviser le texte autour de la première virgule
-def split_text_around_comma(text):
-    parts = text.split(', ', 1)  # Diviser en deux parties autour de la première virgule
-    return parts
 
 def collect_text(tag_name, lst_of_content):
 	#Collect the text between a precise tag
@@ -31,15 +29,15 @@ def collect_text(tag_name, lst_of_content):
 		 
 def show_xml_info(xml_file, output_csv):
 	"""Load and Analysze the XML files
-	The function retrieve the content of some tags that are define throughout the function.
-	Arguments : 
+	The function retrieve the content of some tags that are define throughout the function and add the informations in the output_csv
+	Arguments :
 	output_csv : The csv that have been previously created, must be str
 	xml_file : The xml file  with the data, we want to extract
 	"""
 
 	tree = ET.parse(xml_file)
 	root = tree.getroot()
-	# THe namespaces help to structure the research by element
+	# The namespaces help to structure the research by element
 	namespaces = {
 			'vah': 'http://www.vn.fi/skeemat/vahvistettavalaki/2010/04/27',
 			'sdk': 'http://www.finlex.fi/skeemat/edita/sdk/2010/04/27',
@@ -99,11 +97,13 @@ def show_xml_info(xml_file, output_csv):
 					position_text = position.text if position is not None else 'N/A'
 					name_text = name.text if name is not None else 'N/A'
 
+					#create a list that will contain the signatories of the text
 					lst_of_signatories.append([position_text,name_text])
 					lst_of_signatories = remove_newlines(lst_of_signatories)
 					#The list will be like this  [[postion_first, name_first], [position_second,name_second]]
 					print(f'{position_text}: {name_text}')
 			else:
+				#if there is no signatory
 				lst_of_signatories = [['N/A','N/A'],['N/A','N/A']]
 			
 			#Extract the section of the law
@@ -135,6 +135,7 @@ def show_xml_info(xml_file, output_csv):
 							print(f'{momentti.text} Ceci est un texte')
 							text = momentti.text
 							section_content_parts.append(str(text).strip())	
+							#section_content_parts = section_content_parts.replace("\n", " ")
 							print(section_content_parts)
 					#get the data in Luku Tag
 					#In some articles, there is Luku tag that prevent the retrieving of others tags included in the luku tag
@@ -152,20 +153,37 @@ def show_xml_info(xml_file, output_csv):
 								momentti_kooste = section.findall('saa:MomenttiKooste', namespaces)
 								collect_text(momentti_kooste, section_content_parts)
 								#Test print
-								print(chapter_content_parts, "zehtgequirghvsudgfhestuhgbudfghvdufhbqiufdhg")	   
+								print(chapter_content_parts)	   
 				section_content_text = ' '.join(section_content_parts) if section_content_parts else 'N/A'
-				print(type(section_content_text))
-				print(section_content_text)
+				#print(type(section_content_text))
+
+				#This part removes the "\n" and ";" from specific part such as the content text and title 
+				#to avoid the problems with the creation of supplementary lines
+				if law_title_text:
+					law_title_text = law_title_text.replace("\n", " ")
+				
+				section_content_text = section_content_text.replace("\n"," ")
 				section_content_text =  section_content_text.replace(";", "")
-				#Sometimes there is no section title, so we juste print the id and the text
+
+				section_title_text = section_title_text.replace("\n"," ")
+				
+				#Sometimes there is no section title, so we just print the id and the text
 				if section_title_text == 'N/A':
 					print(f'{section_id}: {section_content_text}')
 				else:
 					print(f'{section_id}: {section_title_text} - {section_content_text}')
-				print([document_type_text, eduskunta_id_text, date_id_text, law_title_text, section_id, section_title_text, section_content_text, lst_of_signatories[0][0], lst_of_signatories[0][1],lst_of_signatories[1][0],lst_of_signatories[1][1]])
+				#print([document_type_text, eduskunta_id_text, date_id_text, law_title_text, section_id, section_title_text, section_content_text, lst_of_signatories[0][0], lst_of_signatories[0][1],lst_of_signatories[1][0],lst_of_signatories[1][1]])
 				writer.writerow([document_type_text, eduskunta_id_text, date_id_text, law_title_text, section_id, section_title_text, section_content_text, lst_of_signatories[0][0], lst_of_signatories[0][1],lst_of_signatories[1][0],lst_of_signatories[1][1]])
 		
-		
+def test():
+	#TEST Remove_newlines
+	text_list = [['Hello\nWorld', None], ['This\nis\na\ntest', '']]
+
+	#output = [['HelloWorld', None], ['Thisisatest', '']]
+
+	create_csv("2015_502_output.csv")
+	show_xml_info("2015/asd20150502.xml", "2015_502_output.csv")
+ 	#try with little example without all the info and with a bad retieval
 
 def main():
 
@@ -199,6 +217,7 @@ def main():
   
   
   #--------Creation of a specific CSV for the article 52 of 2015---------------
+	
   #show_xml_info("Finlex_processing/2015/asd20150052.xml", "Finlex_processing/2015_52_output.csv")
 
   
@@ -207,4 +226,5 @@ def main():
 
 main()
 
+#test()
 #df = pd.read_csv('output.csv', low_memory=False)
