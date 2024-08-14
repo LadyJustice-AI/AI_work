@@ -1,3 +1,13 @@
+
+""" 
+This program creates a csv from the data of "Semantic Finlex data service developed by the Ministry of Justice, 
+Aalto University and Edita Publishing Ltd at http://data.finlex.fi ". You can choose If you want one specific document or every document in 
+only one CSV.
+Oriignal Author : 
+Adrien CANTIN
+
+last modification : XX/08/2024
+"""
 import xml.etree.ElementTree as ET
 import os
 import csv
@@ -10,22 +20,25 @@ def create_csv(output_csv):
 	"""
 	with open(output_csv, mode='a', newline='', encoding='utf-8') as file:
 		writer = csv.writer(file)
-
 		writer.writerow(['Document Type', 'Eduskunta ID', 'Date', 'Law Title', 'Section ID', 'Section Title', 'Section Content', 'Position_first', 'Name_first','Position_second','Name_second'])
 
 
 def remove_newlines(text_list):
 	""" This function replace the "\n" in a space in all sublists of a list (here it's used for the list of signatories)
-	return 
+	return the same list but without the \n
 	"""
 	return [[s.replace('\n', '') if s else s for s in sublist] for sublist in text_list]
 
 
 def collect_text(tag_name, lst_of_content):
-	#Collect the text between a precise tag
+	"""This function collect a text between a precise tag
+	Arguments:
+	tag_name : msut be str. it's the tag where you want to collect the text
+	lst_of_content: this list will contain all the content of one precise tag
+	"""
 	for momentti in tag_name:
-						if momentti is not None and momentti.text is not None:
-							lst_of_content.append(momentti.text.strip())
+		if momentti is not None and momentti.text is not None:
+			lst_of_content.append(momentti.text.strip())
 		 
 def show_xml_info(xml_file, output_csv):
 	"""Load and Analysze the XML files
@@ -39,20 +52,20 @@ def show_xml_info(xml_file, output_csv):
 	root = tree.getroot()
 	# The namespaces help to structure the research by element
 	namespaces = {
-			'vah': 'http://www.vn.fi/skeemat/vahvistettavalaki/2010/04/27',
-			'sdk': 'http://www.finlex.fi/skeemat/edita/sdk/2010/04/27',
-			'saa': 'http://www.vn.fi/skeemat/saadoskooste/2010/04/27',
-			'saa1': 'http://www.vn.fi/skeemat/saadoselementit/2010/04/27',
-			'met': 'http://www.vn.fi/skeemat/metatietokooste/2010/04/27',
-			'met1': 'http://www.vn.fi/skeemat/metatietoelementit/2010/04/27',
-			'asi': 'http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27',
-			'asi1': 'http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27',
-			'org': 'http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15',
-			'org1': 'http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15',
-			'tau': 'http://www.vn.fi/skeemat/taulukkokooste/2010/04/27',
-			'sis': 'http://www.vn.fi/skeemat/sisaltokooste/2010/04/27',
-			'sis1': 'http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27'
-		}
+		'vah': 'http://www.vn.fi/skeemat/vahvistettavalaki/2010/04/27',
+		'sdk': 'http://www.finlex.fi/skeemat/edita/sdk/2010/04/27',
+		'saa': 'http://www.vn.fi/skeemat/saadoskooste/2010/04/27',
+		'saa1': 'http://www.vn.fi/skeemat/saadoselementit/2010/04/27',
+		'met': 'http://www.vn.fi/skeemat/metatietokooste/2010/04/27',
+		'met1': 'http://www.vn.fi/skeemat/metatietoelementit/2010/04/27',
+		'asi': 'http://www.vn.fi/skeemat/asiakirjakooste/2010/04/27',
+		'asi1': 'http://www.vn.fi/skeemat/asiakirjaelementit/2010/04/27',
+		'org': 'http://www.vn.fi/skeemat/organisaatiokooste/2010/02/15',
+		'org1': 'http://www.vn.fi/skeemat/organisaatioelementit/2010/02/15',
+		'tau': 'http://www.vn.fi/skeemat/taulukkokooste/2010/04/27',
+		'sis': 'http://www.vn.fi/skeemat/sisaltokooste/2010/04/27',
+		'sis1': 'http://www.vn.fi/skeemat/sisaltoelementit/2010/04/27'
+	}
 	#Initialisation of the variables
 	document_type_text = eduskunta_id_text = date_id_text = law_title_text = 'N/A'
 	section_id = section_title_text = section_content_text = 'N/A'
@@ -141,19 +154,19 @@ def show_xml_info(xml_file, output_csv):
 					#In some articles, there is Luku tag that prevent the retrieving of others tags included in the luku tag
 					# Extract sections and chapters
 				for luku in saados.findall('saa:Luku', namespaces):
-						luku_id = luku.get('{http://www.vn.fi/skeemat/saadoselementit/2010/04/27}identifiointiTunnus', 'N/A')
-						luku_title = luku.findtext('saa:SaadosOtsikkoKooste', default='N/A', namespaces=namespaces)
+					luku_id = luku.get('{http://www.vn.fi/skeemat/saadoselementit/2010/04/27}identifiointiTunnus', 'N/A')
+					luku_title = luku.findtext('saa:SaadosOtsikkoKooste', default='N/A', namespaces=namespaces)
 
-						for section in luku.findall('saa:Pykala', namespaces):
-								section_id = section.get('{http://www.vn.fi/skeemat/saadoselementit/2010/04/27}identifiointiTunnus', 'N/A')
-								section_title_text = section.findtext('saa:SaadosOtsikkoKooste', default='N/A', namespaces=namespaces)
-								
-								# Concat the content of the tag MomenttiKooste
-								#section_content_parts = []
-								momentti_kooste = section.findall('saa:MomenttiKooste', namespaces)
-								collect_text(momentti_kooste, section_content_parts)
-								#Test print
-								print(chapter_content_parts)	   
+					for section in luku.findall('saa:Pykala', namespaces):
+						section_id = section.get('{http://www.vn.fi/skeemat/saadoselementit/2010/04/27}identifiointiTunnus', 'N/A')
+						section_title_text = section.findtext('saa:SaadosOtsikkoKooste', default='N/A', namespaces=namespaces)
+						
+						# Concat the content of the tag MomenttiKooste
+						#section_content_parts = []
+						momentti_kooste = section.findall('saa:MomenttiKooste', namespaces)
+						collect_text(momentti_kooste, section_content_parts)
+						#Test print
+						print(chapter_content_parts)	   
 				section_content_text = ' '.join(section_content_parts) if section_content_parts else 'N/A'
 				#print(type(section_content_text))
 
@@ -164,8 +177,8 @@ def show_xml_info(xml_file, output_csv):
 				
 				section_content_text = section_content_text.replace("\n"," ")
 				section_content_text =  section_content_text.replace(";", "")
-
-				section_title_text = section_title_text.replace("\n"," ")
+				if section_title_text:
+					section_title_text = section_title_text.replace("\n"," ")
 				
 				#Sometimes there is no section title, so we just print the id and the text
 				if section_title_text == 'N/A':
@@ -179,11 +192,17 @@ def test():
 	#TEST Remove_newlines
 	text_list = [['Hello\nWorld', None], ['This\nis\na\ntest', '']]
 
-	#output = [['HelloWorld', None], ['Thisisatest', '']]
+	text_list = remove_newlines(text_list)
+	output_exemple = [['HelloWorld', None], ['Thisisatest', '']]
+
+	assert text_list == output_exemple
+	"""
+	#Code to generate a specific CSV with one XML files to fix bugs
 
 	create_csv("2015_502_output.csv")
 	show_xml_info("2015/asd20150502.xml", "2015_502_output.csv")
- 	#try with little example without all the info and with a bad retieval
+	"""
+ 	
 
 def main():
 
@@ -191,7 +210,7 @@ def main():
   """ 
   For generating a CSV just with the data for one year, change the year in the year id vairable
   """
-  """year_id= 'Finlex_processing/2015'
+  year_id= '2016'
   count = 0 
   #in case, we want to debug
   create_csv(year_id+"_output.csv")
@@ -202,9 +221,9 @@ def main():
     show_xml_info(file_path, year_id+"_output.csv")
       #count+=1 
     
-  """
-  #----------------------------------PART FOR ALL THE DATA ( 1918 to 2023)---------------------------
   
+  #----------------------------------PART FOR ALL THE DATA ( 1918 to 2023)---------------------------
+  """
   create_csv("output.csv")
   #Under 1918, some problems can appear in the generating CSV
   for number in range(1918,2024): 
@@ -214,17 +233,16 @@ def main():
       file_path = os.path.join(number_str,file)
       print(file_path)
       show_xml_info(file_path, "output.csv")
-  
+  """
   
   #--------Creation of a specific CSV for the article 52 of 2015---------------
 	
   #show_xml_info("Finlex_processing/2015/asd20150052.xml", "Finlex_processing/2015_52_output.csv")
 
   
-#MAIN PROGRAM
+#-----------------MAIN PROGRAM-----------------------
 
 
 main()
 
 #test()
-#df = pd.read_csv('output.csv', low_memory=False)
