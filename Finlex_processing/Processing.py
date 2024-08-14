@@ -210,7 +210,7 @@ def main():
   """ 
   For generating a CSV just with the data for one year, change the year in the year id vairable
   """
-  year_id= '2016'
+  year_id= '2015'
   count = 0 
   #in case, we want to debug
   create_csv(year_id+"_output.csv")
