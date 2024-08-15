@@ -20,6 +20,7 @@ def create_csv(output_csv):
 	"""
 	with open(output_csv, mode='a', newline='', encoding='utf-8') as file:
 		writer = csv.writer(file)
+		#Create the first line of the CSV with specific names for the columns
 		writer.writerow(['Document Type', 'Eduskunta ID', 'Date', 'Law Title', 'Section ID', 'Section Title', 'Section Content', 'Position_first', 'Name_first','Position_second','Name_second'])
 
 

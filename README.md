@@ -9,3 +9,7 @@ In this part, you will find a program that use the data from Finlex to create an
 ## Searching_EURLEX
 
 In this part, you will find an exploration of the EURLEX database with the creation of a csv with specific data.
+
+## Studies 
+
+In this part, you can find interesting studies about AI and LLM (Large Language model).
