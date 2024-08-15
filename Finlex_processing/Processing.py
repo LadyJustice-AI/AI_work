@@ -172,6 +172,8 @@ def show_xml_info(xml_file, output_csv):
 
 				#This part removes the "\n" and ";" from specific part such as the content text and title 
 				#to avoid the problems with the creation of supplementary lines
+				if eduskunta_id_text:
+					eduskunta_id_text = eduskunta_id_text.replace("\n","")
 				if law_title_text:
 					law_title_text = law_title_text.replace("\n", " ")
 				
@@ -179,15 +181,27 @@ def show_xml_info(xml_file, output_csv):
 				section_content_text =  section_content_text.replace(";", "")
 				if section_title_text:
 					section_title_text = section_title_text.replace("\n"," ")
+				if section_id:
+					section_id = section_id.replace("\n", " ")
+				else:
+					section_id = "N/A"
+				print(f" THis is the section : {section_id}")
 				
 				#Sometimes there is no section title, so we just print the id and the text
 				if section_title_text == 'N/A':
 					print(f'{section_id}: {section_content_text}')
 				else:
 					print(f'{section_id}: {section_title_text} - {section_content_text}')
-				#print([document_type_text, eduskunta_id_text, date_id_text, law_title_text, section_id, section_title_text, section_content_text, lst_of_signatories[0][0], lst_of_signatories[0][1],lst_of_signatories[1][0],lst_of_signatories[1][1]])
-				writer.writerow([document_type_text, eduskunta_id_text, date_id_text, law_title_text, section_id, section_title_text, section_content_text, lst_of_signatories[0][0], lst_of_signatories[0][1],lst_of_signatories[1][0],lst_of_signatories[1][1]])
-		
+				#The maximum lenght of a csv cell is 32767 so from 32750,  this part will split the text in 2 parts 
+				#This two parts will be in two differents lines with the same variables except for the section_content_text
+				if len(section_content_text) >30000 : 
+					writer.writerow([document_type_text, eduskunta_id_text, date_id_text, law_title_text, section_id, section_title_text, section_content_text[30000:], lst_of_signatories[0][0], lst_of_signatories[0][1],lst_of_signatories[1][0],lst_of_signatories[1][1]])
+					writer.writerow([document_type_text, eduskunta_id_text, date_id_text, law_title_text, section_id, section_title_text, section_content_text[:30000], lst_of_signatories[0][0], lst_of_signatories[0][1],lst_of_signatories[1][0],lst_of_signatories[1][1]])
+				else:
+					#print([document_type_text, eduskunta_id_text, date_id_text, law_title_text, section_id, section_title_text, section_content_text, lst_of_signatories[0][0], lst_of_signatories[0][1],lst_of_signatories[1][0],lst_of_signatories[1][1]])
+					writer.writerow([document_type_text, eduskunta_id_text, date_id_text, law_title_text, section_id, section_title_text, section_content_text, lst_of_signatories[0][0], lst_of_signatories[0][1],lst_of_signatories[1][0],lst_of_signatories[1][1]])
+				
+				print(len(section_content_text))
 def test():
 	#TEST Remove_newlines
 	text_list = [['Hello\nWorld', None], ['This\nis\na\ntest', '']]
@@ -196,45 +210,46 @@ def test():
 	output_exemple = [['HelloWorld', None], ['Thisisatest', '']]
 
 	assert text_list == output_exemple
-	"""
+	
 	#Code to generate a specific CSV with one XML files to fix bugs
 
-	create_csv("2015_502_output.csv")
-	show_xml_info("2015/asd20150502.xml", "2015_502_output.csv")
-	"""
+	create_csv("2023_1166_output.csv")
+	show_xml_info("2023/asd20231166.xml", "2023_1166_output.csv")
+	
  	
 
 def main():
 
-  #---------------Part for the creation of a CSV of one particular year data---------------------------
-  """ 
-  For generating a CSV just with the data for one year, change the year in the year id vairable
-  """
-  year_id= '2015'
-  count = 0 
-  #in case, we want to debug
-  create_csv(year_id+"_output.csv")
-  for file in os.listdir(year_id):
-    #if count < 5: #debug line to just stop at the fifth XML files
-    file_path = os.path.join(year_id,file)
-    print(file_path)
-    show_xml_info(file_path, year_id+"_output.csv")
+	#---------------Part for the creation of a CSV of one particular year data---------------------------
+	""" 
+	For generating a CSV just with the data for one year, change the year in the year id vairable
+	"""
+	"""
+	year_id= '2015'
+	count = 0 
+	#in case, we want to debug
+	create_csv(year_id+"_output.csv")
+	for file in os.listdir(year_id):
+		#if count < 5: #debug line to just stop at the fifth XML files
+		file_path = os.path.join(year_id,file)
+		print(file_path)
+		show_xml_info(file_path, year_id+"_output.csv")
       #count+=1 
-    
+    """
   
   #----------------------------------PART FOR ALL THE DATA ( 1918 to 2023)---------------------------
-  """
-  create_csv("output.csv")
-  #Under 1918, some problems can appear in the generating CSV
-  for number in range(1918,2024): 
-    print(number)
-    number_str = str(number)
-    for file in os.listdir(number_str):
-      file_path = os.path.join(number_str,file)
-      print(file_path)
-      show_xml_info(file_path, "output.csv")
-  """
-  
+	
+	create_csv("output.csv")
+	#Under 1918, some problems can appear in the generating CSV
+	for number in range(1918,2024): 
+		print(number)
+		number_str = str(number)
+		for file in os.listdir(number_str):
+			file_path = os.path.join(number_str,file)
+			print(file_path)
+			show_xml_info(file_path, "output.csv")
+	
+	
   #--------Creation of a specific CSV for the article 52 of 2015---------------
 	
   #show_xml_info("Finlex_processing/2015/asd20150052.xml", "Finlex_processing/2015_52_output.csv")

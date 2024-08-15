@@ -25,4 +25,4 @@ Important note : The file, in the path file 1994\asd19940635.xml , was removed b
 
 If you want to generate CSV, you need to launch the Processing.py file and uncomment the part, in the main function, that you want to generate. 
 
-
+You can see some examples of the generation for just one year (The file *2015_output.csv* and *2016_output.csv*)
