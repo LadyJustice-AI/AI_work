@@ -13,3 +13,5 @@ In this part, you will find an exploration of the EURLEX database with the creat
 ## Studies 
 
 In this part, you can find interesting studies about AI and LLM (Large Language model).
+
+If you have any questions, feel free to ask it at this email : adriencantin85@gmail.com.
