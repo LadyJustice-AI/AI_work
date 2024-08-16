@@ -1,10 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
 import csv
-
 import re
 
-# Dict with the specifities of CELEXID (See the PDF with the explanation of how to interpret it)
+# Dict with the specifities of CELEXID (See the PDF with the explanation of how to interpret it, Searching_EURLEX\eur-lex-celex-infographic-A3.pdf)
 dict_of_sector = {1 : "Treaties", 2: "International agreements",3:"Legislation", 4:"Complementary legislation", 5: "Preparatory acts and working documents", 6:" Case-Law",7 : "National transposition measures", 8 :"References to national case-law", 9: "Parliamentary questions", 0:"Consolidated acts", 'C':"Other documents published in the Official Journal C series", 'E':"EFTA documents"}
 dict_of_letter = {'L':"DIrectives", 'R': "Regulation", 'D': "Decisions"}
 
@@ -19,10 +18,10 @@ def open_csv(csv_file):
 	lst_of_CELEXID = []
 		
 	with open(csv_file, 'r') as file:
-			reader = csv.reader(file, delimiter=';')
-			for row in reader:                               
-					#print(row)
-					lst_of_CELEXID.append(row[2])#The index of the column in row can change depending on the parameters of your request on the EURLEX website
+		reader = csv.reader(file, delimiter=';')
+		for row in reader:                               
+			#print(row)
+			lst_of_CELEXID.append(row[2])#The index of the column in row can change depending on the parameters of your request on the EURLEX website
 
 
 	return lst_of_CELEXID
@@ -36,24 +35,26 @@ def retrieve_OJ_content(OJ):
 
 	url = "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L:2022:152:FULL"+OJ
 	#alternatives_url = "http://publications.europa.eu/resource/celex/"+CELEX_ID
-	# Envoyer une requête à la page
+	# Send a request to the page
 	response = requests.get(url)
 
-	response.raise_for_status()  # Vérifier que la requête s'est bien passée
+	#check if the request works 
+	response.raise_for_status() 
+	
 
-	# Parser le contenu HTML
+	# Parsing the HTML content
 	soup = BeautifulSoup(response.content, 'html.parser')
 
-	# Extraire le texte de la directive
+	# Extract the directive of the text
 	text = soup.get_text()
 
-	# Enlever les espaces superflus
+	# Remove the unnecessary spaces
 	cleaned_text = ' '.join(text.split())
 
 
 	# print  the cleaned text
 	#print(cleaned_text)
-	# Print the text without processing it
+	#Print the text without processing it
 	#print(text)
 
 
@@ -73,7 +74,7 @@ def retrieve_CELEX_content(CELEX_ID):
 
 	response.raise_for_status()  # Check if the request went fine
 
-	# Parsing of the content HTMM
+	# Parsing the content HTML
 	soup = BeautifulSoup(response.content, 'html.parser')
 
 	# Extract the text of the Directives
@@ -117,8 +118,8 @@ def main():
 	# Print the text and the link
 	for text, link in texts_associated:
 
-		#print(f"Associated Text: {text}\nLink: https://eur-lex.europa.eu{link}\n")
-		print("keep")
+		print(f"Associated Text: {text}\nLink: https://eur-lex.europa.eu{link}\n")
+		#print("keep")
 
 
 	# Extract the textual references
@@ -138,23 +139,26 @@ def main():
 	# Extract all the paragraph
 	paragraphs = soup.find_all('p', class_="oj-note")
 
-	# Debug: Assurez-vous que les paragraphes sont bien extraits
-	print(f"Nombre de paragraphes extraits : {len(paragraphs)}")
+	# This line is for debugging and it shows the number of paragraph 
+	print(f"Number of paragraphs in the extract: {len(paragraphs)}")
 	for i, p in enumerate(paragraphs, 1):
-			print(f"Paragraphe {i}: {p}")
+			print(f"Paragraph {i}: {p}")
 
-	# Filtrer et extraire les textes des paragraphes contenant des mentions de directives
+	#-------------------THIS PART DOESN'T WORK WELL-------------------------------------
+
+	# Filtering and extracting the text of the paragraphs that contain the directives mention 
 	directive_pattern = re.compile(r'Directive \((?:EU|EC|EEC|Euratom)\) \d{4}/\d{2,4}|Regulation \((?:EU|EC|EEC|Euratom)\) No \d{2,4}/\d{2,4}')
 	#directive_pattern = re.compile(r'(Directive /(?:EU|EC|EEC|Euratom)\d{4}/\d{2,4}/(?:EU|EC|EEC|Euratom)|Regulation \((?:EU|EC|EEC|Euratom)\) \d{4}/\d{2,4})')
 		
 	references = []
 	test = "(7)Including the assessment referred to in Article 15 (7) of Directive (EU) 2019/2001."    
+
 	count = 0 
 	for p in paragraphs:
 		text = p.get_text(strip=True)
 
-		# Debug: Afficher le texte brut du paragraphe
-		print(f"Texte du paragraphe: {text}")
+		# Debug: Print the text of the paragraph
+		print(f"Paragraph text: {text}")
 		print(type(text))
 		if "Directive" in text: 
 			count+=1
@@ -168,37 +172,13 @@ def main():
 				references.append(directive_text)
 			
 	print(count)
-	print("Références trouvées:")
+	print("Finding References:")
 	for ref in references:
-		print(f"Texte associé: {ref}\n")
-	
-	"""# Imprimer chaque paragraphe pour vérifier le contenu
-	print(f"Nombre de paragraphes extraits : {len(paragraphs)}")
-	for i, p in enumerate(paragraphs, 1):
-			text = p.get_text(strip=True)
-			print(f"Paragraphe {i}: {text}")
-			print("transition")
-			
-			# Tester l'expression régulière directement
-			match = directive_pattern.search(text)
-			if match:
-					directive_text = match.group(1)
-					print(f"Correspondance trouvée : {directive_text}")
-					references.append(directive_text)
-			else:
-					print("Aucune correspondance trouvée")
+		print(f"Associated Texts: {ref}\n")
 
-	# Vérifiez le contenu de la liste des références
-	print("Références trouvées:")
-	for ref in references:
-			print(f"Texte associé: {ref}\n")"""
-	"""
-	for text in texts_associated:
-		print(f"Texte associé: {text}\n")"""
-	#MAIN PART 
 
 def test():
-# Retrieve all the CELEXID of the CSV
+	# Retrieve all the CELEXID of the CSV
 	CELEXID = open_csv("Searching_housing_2023_EU.csv")
 
 	print(CELEXID)
@@ -250,5 +230,6 @@ def test():
 	for ref in references:
 			print(f"Texte associé: {ref}\n")
 
+#MAIN PART 
 
 main()
